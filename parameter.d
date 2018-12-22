@@ -1,0 +1,60 @@
+256 256 256
+number of processors along Y-array direction
+32
+total number of time steps
+400000
+dt
+0.00040
+rnu
+0.0020
+initial time 
+0.0 
+new flow?
+.TRUE.
+idp - velocity start point
+0 
+Seed for initial flow in case of deterministic forcing
+123
+forcing scheme: 1 deterministic, 2 stochastic
+1
+Force in case of deterministic forcing: now--> 1.242477 0.391356, old--> 0.555440 0.159843
+0.555440 0.159843
+Seeding for stochastic forcing scheme
+232300
+save turbulence statistics every Y time steps, Y=
+10 
+save spectrum every X time steps, X=
+1000 
+Want divergence velocity and other statistics?
+.TRUE.
+rho_water [g/cm3] water--> 1.0, Following RC2000 for growing droplets-->
+1.0
+rho_air [g/cm3]
+0.001
+DNS kolmogorov parameters: eta,time
+0.01392, 0.09694
+shell thickness in %
+2
+energy dissipation rate [cm2/s3]
+400.0
+air viscosity [cm2/s]
+0.17
+gravity [cm/s2]
+980.0
+Generate new particles? If .FALSE., read from disc.
+.TRUE.
+Nonoverlapping particles?
+.TRUE.
+HDI included?
+.FALSE.
+HDI truncation radius (r/a)?
+50.0
+Total number of particles, npart=
+700000 
+drag 0-Stokes 1-nonlinear
+0
+number of particle sets?
+2
+particle radii in [um], Following RC2000 for growing droplets-->
+10.0
+50.0

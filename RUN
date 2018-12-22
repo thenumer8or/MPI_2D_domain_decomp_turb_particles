@@ -1,0 +1,16 @@
+#!/bin/csh
+#
+# LSF batch script to run an MPI application
+#
+#BSUB -P xxxxxxxxx             # project code
+#BSUB -W 06:00                 # wall-clock time (hrs:mins)
+#BSUB -n 1024                  # number of tasks in job         
+#BSUB -x                       # dedicated nodes
+#BSUB -R "span[ptile=16]"      # run 16 MPI tasks per node
+#BSUB -J turb_dns              # job name
+#BSUB -o output.%J             # output file name in which %J is replaced by the job ID
+#BSUB -e error.%J              # error file name in which %J is replaced by the job ID
+#BSUB -q regular               # queue
+
+#run the executable
+mpirun.lsf ./turb

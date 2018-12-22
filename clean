@@ -1,0 +1,12 @@
+rm fort.*
+rm stat/*
+rm turb 
+rm params.mod 
+rm -r coredir*
+rm -r core*
+rm output.*
+rm error.*
+rm 2Ddec*
+rm *.o
+rm turb_mpi.*
+rm global.mod
